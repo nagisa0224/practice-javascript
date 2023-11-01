@@ -18,3 +18,37 @@ fruits.forEach(function(fruit) {
   li.textContent = fruit;
   ul.appendChild(li);
 });
+
+
+document.getElementById("showAlert").addEventListener("click", function() {
+  const name = document.getElementById("nameInput").value;
+  alert("Hello, " + name + "!");
+});
+
+
+const number1 = 5;
+const number2 = 3;
+const sum = number1 + number2;
+document.getElementById("result").textContent = sum;
+
+
+const fruitSelector = document.getElementById("fruitSelector");
+const selectedFruit = document.getElementById("selectedFruit");
+
+fruitSelector.addEventListener("change", function() {
+  const selectedValue = fruitSelector.value;
+  selectedFruit.textContent = "You selected: " + selectedValue;
+});
+
+
+function updateCurrentTime() {
+  const currentTime = new Date();
+  document.getElementById("currentTime").textContent = "Current time: " + currentTime.toLocaleString();
+}
+
+// 初回表示
+updateCurrentTime();
+
+// 1秒ごとに更新
+setInterval(updateCurrentTime, 1000);
+
