@@ -52,3 +52,40 @@ updateCurrentTime();
 // 1秒ごとに更新
 setInterval(updateCurrentTime, 1000);
 
+
+
+// ボタンがクリックされたときの処理
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("ボタンがクリックされました！");
+});
+
+// ページにテキストを追加
+document.getElementById("myText").textContent = "こんにちは、JavaScript！";
+
+// 現在の日付と時刻を取得
+const now = new Date();
+const dateTimeString = now.toLocaleString();
+
+// ページに表示
+document.getElementById("myDateTime").textContent = "現在の日時: " + dateTimeString;
+
+
+document.getElementById("myButton").addEventListener("click", function() {
+  document.getElementById("myText").textContent = "新しいテキストです！";
+});
+
+
+document.getElementById("myButton").addEventListener("click", function() {
+  const inputText = document.getElementById("myInput").value;
+  document.getElementById("outputText").textContent = "入力されたテキスト: " + inputText;
+});
+
+
+const image = document.getElementById("myImage");
+image.addEventListener("mouseover", function() {
+  image.src = "image2.jpg";
+});
+
+image.addEventListener("mouseout", function() {
+  image.src = "image1.jpg";
+});
