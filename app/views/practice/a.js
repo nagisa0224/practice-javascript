@@ -89,3 +89,38 @@ image.addEventListener("mouseover", function() {
 image.addEventListener("mouseout", function() {
   image.src = "image1.jpg";
 });
+
+
+// リストアイテムを追加する関数
+function addTodo() {
+  const todoInput = document.getElementById("todoInput");
+  const todoText = todoInput.value;
+  if (todoText.trim() !== "") {
+    const todoList = document.getElementById("todoList");
+    const listItem = document.createElement("li");
+    listItem.textContent = todoText;
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "削除";
+    deleteButton.addEventListener("click", function() {
+      todoList.removeChild(listItem);
+    });
+    listItem.appendChild(deleteButton);
+    todoList.appendChild(listItem);
+    todoInput.value = "";
+  }
+}
+
+// "追加"ボタンのクリックイベントリスナー
+document.getElementById("addButton").addEventListener("click", addTodo);
+
+// Enterキーでアイテムを追加する
+document.getElementById("todoInput").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    addTodo();
+  }
+});
+
+
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("ボタンがクリックされました！");
+});
