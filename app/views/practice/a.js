@@ -124,3 +124,12 @@ document.getElementById("todoInput").addEventListener("keyup", function(event) {
 document.getElementById("myButton").addEventListener("click", function() {
   alert("ボタンがクリックされました！");
 });
+
+
+console.log("hello world");
+
+let name = "Kate";
+console.log(name);
+
+name = "Tanaka";
+console.log(name);
