@@ -133,3 +133,14 @@ console.log(name);
 
 name = "Tanaka";
 console.log(name);
+
+
+console.log(7);
+
+let number = 3
+console.log(number);
+
+number = 5
+console.log(number);
+
+
