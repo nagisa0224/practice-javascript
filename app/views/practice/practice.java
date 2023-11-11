@@ -50,3 +50,9 @@ switch (n) {
     System.out.println("凶です")；
     break;
 }
+
+int n = 1;
+while (1 <= 5){
+  System.out.println(i + "回ジャンプしました");
+  i++;
+}
