@@ -69,3 +69,120 @@ public class Main {
         }
     }
 }
+
+
+import java.util.Scanner;
+
+public class NumberCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("整数を入力してください: ");
+        int number = scanner.nextInt();
+        
+        if (number > 0) {
+            System.out.println("正の数です。");
+        } else if (number < 0) {
+            System.out.println("負の数です。");
+        } else {
+            System.out.println("ゼロです。");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class DayOfWeek {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("1から7までの整数を入力してください: ");
+        int day = scanner.nextInt();
+        
+        switch (day) {
+            case 1:
+                System.out.println("日曜日");
+                break;
+            case 2:
+                System.out.println("月曜日");
+                break;
+            case 3:
+                System.out.println("火曜日");
+                break;
+            case 4:
+                System.out.println("水曜日");
+                break;
+            case 5:
+                System.out.println("木曜日");
+                break;
+            case 6:
+                System.out.println("金曜日");
+                break;
+            case 7:
+                System.out.println("土曜日");
+                break;
+            default:
+                System.out.println("1から7までの数値を入力してください。");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class MonthDays {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("月の先頭3文字を入力してください: ");
+        String monthAbbreviation = scanner.next().toLowerCase();
+        
+        int days;
+        switch (monthAbbreviation) {
+            case "jan":
+            case "mar":
+            case "may":
+            case "jul":
+            case "aug":
+            case "oct":
+            case "dec":
+                days = 31;
+                break;
+            case "apr":
+            case "jun":
+            case "sep":
+            case "nov":
+                days = 30;
+                break;
+            case "feb":
+                days = 28; // うるう年の場合は29日になるが、ここでは簡略化
+                break;
+            default:
+                System.out.println("正しい月の略語を入力してください。");
+                return;
+        }
+        
+        System.out.println(monthAbbreviation + " は " + days + " 日間あります。");
+    }
+}
+
+
+import java.util.Scanner;
+
+public class LeapYearCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("年を入力してください: ");
+        int year = scanner.nextInt();
+        
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + "年はうるう年です。");
+        } else {
+            System.out.println(year + "年はうるう年ではありません。");
+        }
+    }
+}
+
+
