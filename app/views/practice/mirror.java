@@ -51,3 +51,36 @@ public class Mirror {
     System.out.println(pie * pie * PI);
   }
 }
+
+/* final 型 定数名 = 初期値;
+   定数名には大文字を使用することが多い
+   ちなみにdoubleは普通の少数を使用するときの型（例：円周率） */
+
+
+// 3を変数aに、5を変数bにいれ、その積を変数cに入れて最後に以下の文を表示してください
+// 縦幅3横幅5の長方形の面積は、15
+public class Mirror {
+  public static void main(String[] args) {
+    int a = 3;
+    int b = 5;
+    int c = a * b;
+    System.out.println("縦幅3横幅5の長方形の面積は、" + c);
+  }
+}
+
+
+public class Mirror {
+  public static void main(String[] args) {
+    int a = 20;
+    int b = a + 5;
+    System.out.println(a);
+    System.out.println(b);
+  }
+}
+
+
+public class Mirror {
+  public static void main(String[] args) {
+    System.out.println("私の好きな記号は二重引用符（）")
+  }
+}
