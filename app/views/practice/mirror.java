@@ -81,6 +81,11 @@ public class Mirror {
 
 public class Mirror {
   public static void main(String[] args) {
-    System.out.println("私の好きな記号は二重引用符（）")
+    System.out.println("私の好きな記号は二重引用符（¥"）です");
   }
 }
+
+// 二重引用符を文字列に入れる場合は ¥" 
+// ¥1200と表示させる場合は ¥¥1200 と表示される
+
+
