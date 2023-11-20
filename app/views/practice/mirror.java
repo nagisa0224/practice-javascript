@@ -89,7 +89,7 @@ public class Mirror {
 // ¥1200と表示させる場合は ¥¥1200 と表示される
 
 
-public class Mirror{
+public class Mirror {
   public static void main(String[] args) {
     int a = 100;
     a++;
@@ -98,11 +98,29 @@ public class Mirror{
 }
 
 
-public class Mirror{
+public class Mirror {
   public static void main(String[] args) {
     int a = 10;
     int b = 10;
     System.out.println(++a + 50);
     System.out println(b++ + 50);
+  }
+}
+
+
+public class Mirror {
+  public static void main(String[] args) {
+    float f = 3;
+    double d = f;
+    System.out.println(f);
+    System.out.println(d);
+  }
+}
+
+
+public class Mirror {
+  public static void main (String[] args) {
+    int age = (int)3.2;
+    System.out.println(age);
   }
 }
