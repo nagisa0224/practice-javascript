@@ -119,8 +119,28 @@ public class Mirror {
 
 
 public class Mirror {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     int age = (int)3.2;
     System.out.println(age);
+  }
+}
+
+// 強制的な型の変換
+// （変換式の型名）式
+
+
+public class Mirror {
+  public static void main(String[] args) {
+    double d = 8.5 / 2;
+    long 1 = 5 + 2L;
+    System.out.println(d);
+    System.out.println(l);
+  }
+}
+
+public class Mirror {
+  public static void main(String[] args) {
+    String msg = "私の年齢は" + 23;
+    System.out.println(msg);
   }
 }
