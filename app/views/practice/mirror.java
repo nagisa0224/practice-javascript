@@ -155,4 +155,5 @@ public class Mirror {
   }
 }
 
-// 上記のSystem.out.print
+// 上記のSystem.out.print()で改行なしで表示することができる
+// 上記の出力結果　私の名前はすがわらです
