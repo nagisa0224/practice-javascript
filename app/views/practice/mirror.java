@@ -157,3 +157,76 @@ public class Mirror {
 
 // 上記のSystem.out.print()で改行なしで表示することができる
 // 上記の出力結果　私の名前はすがわらです
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 10; i >= 1; i--) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        int count = 0;
+        int sum = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                count++;
+                sum += i;
+            }
+        }
+
+        System.out.println("偶数の個数: " + count);
+        System.out.println("偶数の合計: " + sum);
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(i);
+            if (i < 10) {
+                System.out.print(", ");
+            }
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = new int[20];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+
+        System.out.print("奇数: ");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i]);
+                if (i < array.length - 2) {
+                    System.out.print(", ");
+                }
+            }
+        }
+
+        System.out.println();
+
+        System.out.print("偶数: ");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.print(array[i]);
+                if (i < array.length - 2) {
+                    System.out.print(", ");
+                }
+            }
+        }
+    }
+}
