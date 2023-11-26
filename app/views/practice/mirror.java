@@ -230,3 +230,42 @@ public class Main {
         }
     }
 }
+
+
+public static void pino(String[] args) {
+		for (int p = 1; p <= 10; p++) {
+			System.out.println(p);
+		}
+		pyun(args);
+}
+
+
+//public static void pupupu(String[] args) {
+	//	for (int i = 1; i <= 10; i++) {
+	//		System.out.print(i);
+	//		if (i < 10) {
+	//			System.out.print(", ");
+	//		}
+	//	}
+	//}
+	
+public static void pyun(String[] args) {
+		for (int i = 1; i <= 50; i++) {
+			if (i % 2 == 0) {
+				System.out.print(i);
+				if (i < 50) {
+					System.out.print(", ");
+				}
+			}
+		}
+		mumumu(args);
+	}
+	
+	
+public static void mumumu(String[] args) {
+		int sum = 0;
+		for (int m = 1; m <= 100; m += 2) {
+			sum += m;
+		}
+		System.out.println("奇数の和：" + sum);
+	}
