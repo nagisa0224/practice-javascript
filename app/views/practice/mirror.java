@@ -269,3 +269,86 @@ public static void mumumu(String[] args) {
 		}
 		System.out.println("奇数の和：" + sum);
 	}
+	
+	public class Problem1 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+
+public class Problem2 {
+    public static void main(String[] args) {
+        for (int i = 2; i <= 50; i += 2) {
+            System.out.println(i);
+        }
+    }
+}
+
+
+public class Problem3 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 100; i += 2) {
+            sum += i;
+        }
+        System.out.println("奇数の和: " + sum);
+    }
+}
+
+
+public class Problem4 {
+    public static void main(String[] args) {
+        int[] array = new int[20];
+        for (int i = 1; i <= 20; i++) {
+            array[i - 1] = i;
+        }
+
+        System.out.print("素数: ");
+        for (int num : array) {
+            if (isPrime(num)) {
+                System.out.print(num + " ");
+            }
+        }
+    }
+
+    // 素数判定メソッド
+    public static boolean isPrime(int num) {
+        if (num < 2) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+
+public class Problem5 {
+    public static void main(String[] args) {
+        int[] array = new int[30];
+        for (int i = 1; i <= 30; i++) {
+            array[i - 1] = i;
+        }
+
+        int max = array[0];
+        int min = array[0];
+
+        for (int num : array) {
+            if (num > max) {
+                max = num;
+            }
+            if (num < min) {
+                min = num;
+            }
+        }
+
+        System.out.println("最大値: " + max);
+        System.out.println("最小値: " + min);
+    }
+}
