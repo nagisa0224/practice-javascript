@@ -351,4 +351,29 @@ public class Problem5 {
         System.out.println("最大値: " + max);
         System.out.println("最小値: " + min);
     }
+    
+    public class Problem5 {
+    public static void main(String[] args) {
+        int[] array = new int[30];
+        for (int i = 1; i <= 30; i++) {
+            array[i - 1] = i;
+        }
+
+        int max = array[0];
+        int min = array[0];
+
+        for (int num : array) {
+            if (num > max) {
+                max = num;
+            }
+            if (num < min) {
+                min = num;
+            }
+        }
+
+        System.out.println("最大値: " + max);
+        System.out.println("最小値: " + min);
+    }
+}
+
 }
