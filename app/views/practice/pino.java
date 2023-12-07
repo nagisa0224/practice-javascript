@@ -102,6 +102,27 @@ public class PrimeNumbers {
     }
 }
 
+public class PalindromeChecker {
+    public static boolean isPalindrome(String str) {
+        String reversed = new StringBuilder(str).reverse().toString();
+        return str.equals(reversed);
+    }
 
+    public static void main(String[] args) {
+        String word = "level";
+        System.out.println(word + " is a palindrome: " + isPalindrome(word));
+    }
+}
+
+public class PalindromeChecker {
+    public static boolean isPalindrome(String str) {
+        String reversed = new StringBuilder(str).reverse().toString();
+        return str.equals(reversed);
+    }
+    public static void main(String[] args) {
+        String reversed = new StringBuilder(str).reverse().toString();
+        return str.equals(reversed);
+    }
+}
 
 }
