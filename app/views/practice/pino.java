@@ -125,4 +125,65 @@ public class PalindromeChecker {
     }
 }
 
+import java.util.Scanner;
+
+public class SumOfNumbers {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Nを入力してください: ");
+        int N = scan.nextInt();
+
+        int sum = 0;
+        for (int i = 1; i <= N; i++) {
+            sum += i;
+        }
+
+        System.out.println("1から" + N + "までの合計: " + sum);
+    }
+}
+
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Nを入力してください: ");
+        int N = scan.nextInt();
+
+        int result = fibonacci(N);
+        System.out.println("フィボナッチ数列の第" + N + "項: " + result);
+    }
+
+    static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("文字列を入力してください: ");
+        String str = scan.nextLine();
+
+        boolean isPalindrome = checkPalindrome(str);
+        if (isPalindrome) {
+            System.out.println("回文です");
+        } else {
+            System.out.println("回文ではありません");
+        }
+    }
+
+    static boolean checkPalindrome(String s) {
+        String reversed = new StringBuilder(s).reverse().toString();
+        return s.equals(reversed);
+    }
+}
+
+
 }
