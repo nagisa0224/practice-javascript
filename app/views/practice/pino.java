@@ -185,5 +185,27 @@ public class PalindromeCheck {
     }
 }
 
+import java.util.Scanner;
+
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("文字列を入力してください: ");
+        String str = scan.nextLine();
+
+        boolean isPalindrome = checkPalindrome(str);
+        if (isPalindrome) {
+            System.out.println("回文です");
+        } else {
+            System.out.println("回文ではありません");
+        }
+    }
+
+    static boolean checkPalindrome(String s) {
+        String reversed = new StringBuilder(s).reverse().toString();
+        return s.equals(reversed);
+    }
+}
+
 
 }
