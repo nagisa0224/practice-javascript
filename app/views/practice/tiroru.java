@@ -55,6 +55,14 @@ public class Tiroru {
     }
   }
   
-  int [] n
+  int [] n = new int [10];
+  for (int i = 0; i < 10; i++) {
+    System.out.print(n[i]);
+    if (i < 9) {
+      System.out.print("|");
+    } else {
+      System.out.println();
+    }
+  }
   
 }
