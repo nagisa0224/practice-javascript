@@ -41,4 +41,20 @@ public class Tiroru {
       System.out.println(money + " " + point);
     }
   }
+  
+  int [] n = new int [10];
+  for (int i = 0; i < 10; i++) {
+    n[i] = sc.nextInt();
+  }
+  for (int i = 0; i < 10; i++) {
+    System.out.print(n[i]);
+    if (i < 9) {
+      System.out.print(",");
+    } else {
+      System.out.println();
+    }
+  }
+  
+  int [] n
+  
 }
